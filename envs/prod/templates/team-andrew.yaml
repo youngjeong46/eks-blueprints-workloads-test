@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: team-andrew
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  destination:
+    namespace: team-andrew
+    server: {{ .Values.spec.destination.server }}
+  source:
+    repoURL: https://github.com/youngjeong46/microservices-demo
+    path: kubernetes-manifests
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: true
+    syncOptions:
+    - CreateNamespace=true

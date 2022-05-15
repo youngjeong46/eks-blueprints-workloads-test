@@ -1,0 +1,8 @@
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/youngjeong46/eks-blueprints-workloads-test
+    targetRevision: main
+  ingress:
+    host: prod.example.com
