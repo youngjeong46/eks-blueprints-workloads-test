@@ -12,7 +12,7 @@ spec:
     server: {{ .Values.spec.destination.server }}
   source:
     repoURL: https://github.com/argoproj/argocd-example-apps
-    path: guestbook
+    path: sock-shop
     targetRevision: master
   syncPolicy:
     automated:
