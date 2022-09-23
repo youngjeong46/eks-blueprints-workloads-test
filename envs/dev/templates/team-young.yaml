@@ -11,7 +11,7 @@ spec:
     namespace: team-young
     server: {{ .Values.spec.destination.server }}
   source:
-    repoURL: https://github.com/argoproj/argocd-example-apps
+    repoURL: https://github.com/youngjeong46/argocd-example-apps
     path: sock-shop
     targetRevision: master
   syncPolicy:
