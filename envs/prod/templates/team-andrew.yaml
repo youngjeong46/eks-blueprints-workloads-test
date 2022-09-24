@@ -12,7 +12,7 @@ spec:
     server: {{ .Values.spec.destination.server }}
   source:
     repoURL: https://github.com/youngjeong46/microservices-demo
-    path: kubernetes-manifests
+    path: kubernetes-manifests-prod
     targetRevision: master
   syncPolicy:
     automated:
